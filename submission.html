@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	<link rel="stylesheet" type="text/css" href="reg.css">
+</head>
+<body>
+	<div class="wrap">
+		<div id="error"></div>
+		<h1>Sign Up</h1>
+		<form id='form' action="msg.html" onsubmit="return validate()">
+			<p>
+			<input id='fname' type="text" name="First Name" placeholder="Enter First Name" required></p>
+			<p>
+			<input id="lname" type="text" placeholder="Enter Last Name" name="Last Name" required></p>
+			<p>
+			<input id='email' type="email" placeholder="Enter Email" name="Email" required></p>
+			<p>
+			<input id='num' type="number" placeholder="Enter Number" name="Number" required></p>
+			<p>
+			<input id="pass" type="Password" placeholder="Enter Password" name="Password" required></p>
+			<p>
+			<input id="cpass" type="Password" placeholder="Confirm Password" name="Password" required></p>
+			<div>
+			<p id='bday'>Date of Birth <br>
+				<select name="Days" id="Date"> 
+					<option>Day</option>
+					<option>1</option>
+					<option>2</option> 
+					<option>3</option>
+					<option>4</option>
+					<option>....</option>
+				</select>
+				<select name="months" id="month">
+					<option>Month</option>
+					<option>Jan</option>
+					<option>Feb</option>
+					<option>March</option>
+					<option>April</option>
+					<option>....</option>
+				</select>
+				<select name="years" id='year'>
+					<option>Year</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+					<option>2000</option>
+					<option>....</option>
+				</select>
+			</p></div>
+			<hr>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
